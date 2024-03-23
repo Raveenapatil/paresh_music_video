@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSIC AND VIDEOS</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css"> -->
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="bgimg">
+
+    <nav class="navbar fixed-top navbar-expand-md text-white navbar-dark ">
+      <div class="container">
+        <a class="navbar-brand text-white font-weight-bold   " href="#">PLAYLIST</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a id="home" class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#aboutus">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#audio">Audio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="#video">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container text-center text-white headerset">
+
+      <!-- <div class="sample">
+        <img src="images/audio/sample.jpg" alt="">
+      </div>  -->
+      
+      <div class="blur">
+        <h2>Welcome to Our Studio!</h2>
+        <h1>IT'S NICE TO MEET YOU</h1>
+      </div>
+      <!-- <button class="btn btn-warning text-white btn-lg">SUBSCRIBE</button> -->
+    </div>
+  </div>
+  <audio id="my_audio" autoplay>
+    <source src="./audio/samplebg.mp3" type="audio/mpeg">
+  </audio>
+
+  <section id="aboutus" class="container aboutus text-center">
+    <h1>ABOUT US</h1>
+    <p> Lorem ipsum dolor sit </p>
+    <div class="row rowsetting">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+        <div class="imgsection d-block m-auto bg-info">
+          <i class="fa fa-music fa-3x text-white"></i>
+        </div>
+        <h2>OUR MUSIC</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolor in quisquam dolore magnam quasi autem
+          sapiente vero error eaque laboriosam iusto quia ratione et, adipisci delectus veniam, nesciunt aliquid.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+        <div class="imgsection d-block m-auto bg-info">
+          <i class="fa fa-video-camera fa-3x text-white"></i>
+        </div>
+        <h2>OUR VIDEOS</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolor in quisquam dolore magnam quasi autem
+          sapiente vero error eaque laboriosam iusto quia ratione et, adipisci delectus veniam, nesciunt aliquid.</p>
+
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
+        <a href="#team">
+        <div class="imgsection d-block m-auto bg-info">
+          <i  class="fa fa-users fa-3x text-white"></i>
+        </div>
+        <h2>OUR TEAM</h2></a>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum dolor in quisquam dolore magnam quasi autem
+          sapiente vero error eaque laboriosam iusto quia ratione et, adipisci delectus veniam, nesciunt aliquid.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- audio -->
+  <section id="audio" class="audio bg-light">
+    <div class="container text-center">
+      <h1>AUDIO</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img class="mx-auto img-fluid card-img-top" src="images/audio/sample.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <audio id="2" src="audio/sample.mp3"></audio>
+              <div id="Progress_elements">
+                <div id="Progressduration">
+                  <div id="Start">0 : 0</div>
+                  <div id="End">4 : 8</div>
+                </div>
+                <div id="ProgressMeterContainer">
+                  <div id="ProgrssMeterChild"></div>
+                </div>
+              </div>
+              <div id="MusicControls">
+                <div class="control" title="Pause/play">
+                  <i id="PausePlay1" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img class="mx-auto card-img-top" src="images/audio/sample.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <audio id="2" src="audio/sample.mp3"></audio>
+              <div id="Progress_elements">
+                <div id="Progressduration">
+                  <div id="Start">0 : 0</div>
+                  <div id="End">4 : 8</div>
+                </div>
+                <div id="ProgressMeterContainer">
+                  <div id="ProgrssMeterChild"></div>
+                </div>
+              </div>
+              <div id="MusicControls">
+                <div class="control" title="Pause/play">
+                  <i id="PausePlay1" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img class="mx-auto card-img-top" src="images/audio/sample.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <audio id="2" src="audio/sample.mp3"></audio>
+              <div id="Progress_elements">
+                <div id="Progressduration">
+                  <div id="Start">0 : 0</div>
+                  <div id="End">4 : 8</div>
+                </div>
+                <div id="ProgressMeterContainer">
+                  <div id="ProgrssMeterChild"></div>
+                </div>
+              </div>
+              <div id="MusicControls">
+                <div class="control" title="Pause/play">
+                  <i id="PausePlay1" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img class="mx-auto img-fluid card-img-top" src="images/audio/sample.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <audio id="2" src="audio/sample.mp3"></audio>
+              <div id="Progress_elements">
+                <div id="Progressduration">
+                  <div id="Start">0 : 0</div>
+                  <div id="End">4 : 8</div>
+                </div>
+                <div id="ProgressMeterContainer">
+                  <div id="ProgrssMeterChild"></div>
+                </div>
+              </div>
+              <div id="MusicControls">
+                <div class="control" title="Pause/play">
+                  <i id="PausePlay1" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img class="mx-auto card-img-top" src="images/audio/sample.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <audio id="2" src="audio/sample.mp3"></audio>
+              <div id="Progress_elements">
+                <div id="Progressduration">
+                  <div id="Start">0 : 0</div>
+                  <div id="End">4 : 8</div>
+                </div>
+                <div id="ProgressMeterContainer">
+                  <div id="ProgrssMeterChild"></div>
+                </div>
+              </div>
+              <div id="MusicControls">
+                <div class="control" title="Pause/play">
+                  <i id="PausePlay1" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+          <div class="card">
+            <img class="mx-auto card-img-top" src="images/audio/sample.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <audio id="2" src="audio/sample.mp3"></audio>
+              <div id="Progress_elements">
+                <div id="Progressduration">
+                  <div id="Start">0 : 0</div>
+                  <div id="End">4 : 8</div>
+                </div>
+                <div id="ProgressMeterContainer">
+                  <div id="ProgrssMeterChild"></div>
+                </div>
+              </div>
+              <div id="MusicControls">
+                <div class="control" title="Pause/play">
+                  <i id="PausePlay1" class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="video bg-white">
+    <div class="container text-center">
+      <h1>VIDEO</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10  d-block m-auto">
+
+          <div class="card">
+            <a href="https://youtu.be/pvYGQcjW6ac" target="_blank"> 
+              <img class="mx-auto img-fluid card-img-top" src="images//video/video1_thumbnail.png" alt="Card image cap">
+            </a> 
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <video src="https://codingyaar.com/wp-content/uploads/video-in-bootstrap-card.mp4" class="card-img-top"
+              controls></video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/W21rnDn8L9U?si=SVDXdGKhXQM4W6Qs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/W21rnDn8L9U?si=SVDXdGKhXQM4W6Qs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/W21rnDn8L9U?si=SVDXdGKhXQM4W6Qs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/W21rnDn8L9U?si=SVDXdGKhXQM4W6Qs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/W21rnDn8L9U?si=SVDXdGKhXQM4W6Qs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/W21rnDn8L9U?si=SVDXdGKhXQM4W6Qs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 ">
+          <div class="card">
+            <div class="ratio ratio-16x9">
+              <iframe width="100%" height="250px" src="https://www.youtube.com/embed/W21rnDn8L9U?si=SVDXdGKhXQM4W6Qs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                some quick info
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Team -->
+<section id="team" class="team bg-light">
+  <div class="container text-center">
+    <h1>OUR AMAZING TEAM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row teamsetting">
+        <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+            <figure class="figure">
+              <img src="images/audio/sample.jpg" alt="" class="figure-img img-fluid rounded-circle" height="250px" width="250px">
+              <figcaption>
+                <h4>Paresh Jadhav</h4>
+                <p class="figure-caption">Lead</p>
+              </figcaption>
+            </figure>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+          <figure class="figure">
+            <img src="images/audio/sample.jpg" alt="" class="figure-img img-fluid rounded-circle" height="250px" width="250px">
+            <figcaption>
+              <h4>Paresh Jadhav</h4>
+              <p class="figure-caption">Lead</p>
+            </figcaption>
+          </figure>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+        <figure class="figure">
+          <img src="images/audio/sample.jpg" alt="" class="figure-img img-fluid rounded-circle" height="250px" width="250px">
+          <figcaption>
+            <h4>Paresh Jadhav</h4>
+            <p class="figure-caption">Lead</p>
+          </figcaption>
+        </figure>
+    </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- contactus -->
+<section id="contact">
+  <div class="container">
+
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+  <h6 class="text-center">Copyright © 2024, Design by Raveena Patil</h6>
+</footer>
+
+  <script src="js/script.js"></script>
+ 
+</body>
+
+</html>
