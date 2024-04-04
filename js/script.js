@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-utyre1445-
-'9l7-5j9h7egbuvtygfve\h t0
-=pc cxfy0   
-
     $('.headerset , #home').click(function () {
         var audio = document.getElementById("my_audio");
         audio.play();
